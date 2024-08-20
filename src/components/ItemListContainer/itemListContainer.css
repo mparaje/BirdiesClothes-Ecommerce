@@ -1,0 +1,18 @@
+.contenedor-itemlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.title{
+    padding: 20px;
+    margin: 20px;
+}
+
+.description{
+    padding: 20px;
+    margin: 20px;
+}
