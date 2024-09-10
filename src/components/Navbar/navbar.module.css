@@ -1,8 +1,7 @@
-nav{
+
+.containerNav{
     width: 100%;
     height: auto;
-}
-.container-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +9,7 @@ nav{
     margin: 20px;
     border-bottom: 2px solid rgb(164, 9, 133);
 }
-.container-categorias{
+.containerCategorias{
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -19,28 +18,28 @@ nav{
     align-items: center;
 }
 
-.container-categorias li{
+.containerCategorias li{
     padding: 20px;
     align-self: center;
     text-decoration: none;
     list-style: none;
 }
 
-.container-carrito{
+.containerCarrito{
     display: flex;
     flex-direction: row;
     padding: 20px;
     justify-content: center;
     align-items: center;
 }
-.logo-carrito{
+.logoCarrito{
     font-size: 25px;
     padding: 10px;
 }
-.carrito-style{
+.carritoStyle{
     text-decoration: none;
 }
-.container-logo{
+.containerLogo{
     display: flex;
     align-items: center;
 }
@@ -53,13 +52,13 @@ nav{
     transform: scale(1.1);
 }
 
-.logo-style{
+.logoStyle{
     display: flex;
     justify-content: center;
     text-decoration: none;
 
 }
-.cantidad-carrito{
+.cantidadCarrito{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,12 +74,25 @@ nav{
 .categoria{
     padding: 10px;
     margin: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
     text-decoration: none;
     color: black;
+    transition: 0.1s;
 }
-.categoria:hover{
-    background: linear-gradient(rgb(97, 4, 139),rgb(164, 9, 133));
-    color: white;
-    border-radius: 20px;
-    transition: 0.2s;
+
+.categoria::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px; 
+    left: 0;
+    bottom: -3px; 
+    background: linear-gradient(rgb(97, 4, 139), rgb(164, 9, 133)); 
+    transition: width 0.3s ease;
+}
+
+.categoria:hover::after{
+    width: 100%;
 }

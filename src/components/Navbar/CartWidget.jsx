@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom"
+import styles from "./navbar.module.css"
+
 export const CartWidget = () =>{
     return(
-        <section className="container-carrito">
-            <div className="logo-carrito"><a href="./index.html" className="carrito-style">🛒</a></div>
-            <div className="cantidad-carrito">3</div>
+        <section className={styles.containerCarrito}>
+            <div className={styles.logoCarrito}>
+                <Link to='/carrito' className={styles.carritoStyle}>🛒</Link>
+            </div>
+            <div className={styles.cantidadCarrito}>3</div>
         </section>
     )
 }

@@ -1,4 +1,4 @@
-.contenedor-itemlist{
+.contenedorItemlist{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,12 +7,10 @@
     margin: 20px;
 }
 
-.title{
-    padding: 20px;
-    margin: 20px;
-}
-
 .description{
     padding: 20px;
     margin: 20px;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
 }
