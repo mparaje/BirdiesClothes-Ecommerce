@@ -5,7 +5,7 @@ export const CartWidget = () =>{
     return(
         <section className={styles.containerCarrito}>
             <div className={styles.logoCarrito}>
-                <Link to='/carrito' className={styles.carritoStyle}>🛒</Link>
+                <Link to='/cart' className={styles.carritoStyle}>🛒</Link>
             </div>
             <div className={styles.cantidadCarrito}>3</div>
         </section>

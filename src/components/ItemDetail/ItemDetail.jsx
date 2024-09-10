@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import styles from "./itemDetail.module.css"
 import "../Item/item.css"
 import { ItemCount } from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 
 export const ItemDetail = ({detail}) => {
@@ -29,6 +30,7 @@ export const ItemDetail = ({detail}) => {
                     <ItemCount stock={10} initial = {0} onAdd={null}/>
                 </Col>
             </Row>
+            <Link to='/cart' className={styles.btnFinal}><Button>Finalizar compra</Button></Link>
         </Container>
     )
 };

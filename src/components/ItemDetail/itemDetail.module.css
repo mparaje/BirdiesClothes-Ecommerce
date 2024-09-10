@@ -54,6 +54,21 @@
     line-height: 1.6;
 }
 
+.btnFinal{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.btnFinal button{
+    background: linear-gradient(rgb(97, 4, 139),rgb(164, 9, 133));
+    text-decoration: none;
+    border: none;
+}
+
 @media (max-width: 768px) {
     .imageColumn {
         margin-bottom: 2rem;
