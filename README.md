@@ -1,2 +1,3 @@
-Hola! Este es mi proyecto llamado Birdies Clothes. Va a ser una tienda de ropa, accesorios y zapatos. 
-A continuación el link de la primera entrega de mi proyecto con React + Vite: http://localhost:5173/
+Hola! Este es mi proyecto llamado Birdies Clothes. Va a ser una tienda de ropa y accesorios. 
+Agregue el ItemListContainer, ItemDetailContainer y el ItemCount. Use el rating de la API para dar una calificacion de los productos. 
+Falta realizar la funcion para agregar al carrito. 
