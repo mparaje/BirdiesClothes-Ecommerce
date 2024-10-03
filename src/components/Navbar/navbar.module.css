@@ -6,7 +6,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    margin: 20px;
     border-bottom: 2px solid rgb(164, 9, 133);
 }
 .containerCategorias{
@@ -25,20 +24,6 @@
     list-style: none;
 }
 
-.containerCarrito{
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.logoCarrito{
-    font-size: 25px;
-    padding: 10px;
-}
-.carritoStyle{
-    text-decoration: none;
-}
 .containerLogo{
     display: flex;
     align-items: center;
@@ -57,18 +42,6 @@
     justify-content: center;
     text-decoration: none;
 
-}
-.cantidadCarrito{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    font-size: 16px;
-    background: linear-gradient(rgb(97, 4, 139),rgb(164, 9, 133));
-    color: white;
-    border-radius: 50%;
 }
 
 .categoria{

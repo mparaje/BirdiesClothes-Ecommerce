@@ -1,15 +1,26 @@
 /* eslint-disable react/prop-types */
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
 import styles from "./itemDetail.module.css"
 import "../Item/item.css"
 import { ItemCount } from '../ItemCount/ItemCount';
-import { Link } from 'react-router-dom';
+import { useCartContext } from "../../context/cartContext";
 
+export const ItemDetail = ({ detail }) => {
+    const [count, setCount] = useState(1);
+    const { addToCart } = useCartContext();
 
-export const ItemDetail = ({detail}) => {
     if (!detail) {
         return <div>Loading...</div>;
     }
+
+    const onCountChange = (newCount) => {
+        setCount(newCount);
+    };
+
+    const handleAddToCart = () => {
+        addToCart(detail, count);
+    };
 
     return (
         <Container className={styles.itemDetailContainer}>
@@ -27,10 +38,20 @@ export const ItemDetail = ({detail}) => {
                         </div>
                     )}
                     {detail.description && <p className={styles.productDescription}>{detail.description}</p>}
-                    <ItemCount stock={10} initial = {0} onAdd={null}/>
+                    <ItemCount 
+                        stock={detail.stock || 10} 
+                        initial={1} 
+                        onCountChange={onCountChange}
+                    />
+                    <button
+                        className={styles.addToCartButton}
+                        onClick={handleAddToCart}
+                        disabled={count === 0 || detail.stock === 0}
+                    >
+                        Add to Cart
+                    </button>
                 </Col>
             </Row>
-            <Link to='/cart' className={styles.btnFinal}><Button>Finalizar compra</Button></Link>
         </Container>
-    )
+    );
 };

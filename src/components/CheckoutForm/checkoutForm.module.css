@@ -1,0 +1,29 @@
+.formBox{
+    background-color: #ffe2fd;
+}
+.title {
+    margin-bottom: 1.5rem;
+}
+.containerSubmitBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton {
+    font-size: 18px;
+    margin-top: 1.5rem;
+    background-color: rgb(164, 9, 133);
+    color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    transition: 0.2s
+}
+
+.submitButton:hover{
+    background-color: rgba(169, 1, 135, 0.801);
+    box-shadow: 1px 1px 1px rgb(57, 57, 57);
+}

@@ -1,0 +1,13 @@
+#checkout-btn{
+    border-color: rgb(164, 9, 133);
+}
+
+#close-btn{
+    background-color:rgb(118, 10, 97);
+    border-color: rgb(107, 6, 87);
+    transition: 0.1s;
+}
+
+#close-btn:hover{
+    background-color: rgba(118, 10, 96, 0.836);
+}

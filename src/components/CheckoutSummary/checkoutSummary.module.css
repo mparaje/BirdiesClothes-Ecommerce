@@ -1,0 +1,23 @@
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.cardHeader {
+    background: linear-gradient(rgb(97, 4, 139),rgb(164, 9, 133));
+    --bs-card-cap-color: #ffffff;
+    padding: 1rem;
+}
+
+.itemTitle {
+    --bs-card-cap-color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.itemQuantity {
+    color: #6c757d;
+}
+
+.totalPrice {
+    color: rgb(174, 14, 142);
+}

@@ -1,0 +1,5 @@
+.loader{
+    --cui-spinner-width: 5rem;
+    --cui-spinner-height: 5rem;
+    --cui-spinner-animation-name: spinner-grow;
+}

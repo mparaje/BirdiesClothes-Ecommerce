@@ -1,9 +1,10 @@
-import { CartWidget } from "./CartWidget"
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 import styles from "./navbar.module.css"
 import { useEffect, useState } from "react"
+import { CartContainer } from "../CartContainer/CartContainer"
 
-export const Navbar = () =>{
+export const Navbar = ({isCartOpen, setIsCartOpen}) =>{
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
@@ -29,7 +30,7 @@ export const Navbar = () =>{
                 ))                
                 }
             </ul>
-            <CartWidget/>
+            <CartContainer isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen}/>
         </nav>
     )
 }

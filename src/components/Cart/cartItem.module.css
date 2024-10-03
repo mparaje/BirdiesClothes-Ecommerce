@@ -1,0 +1,29 @@
+.cartItem{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+
+.cardTitle{
+    font-size: 15px;
+}
+
+.cardBody{
+    width: 80%;
+}
+.cardImg{
+    width: 60%;
+}
+
+.cardBtnDelete{
+    background: linear-gradient(rgb(97, 4, 139),rgb(164, 9, 133));
+    --bs-btn-border-color: rgb(164,9,133);
+    transition: 0.3s;
+}
+
+.cardBtnDelete:hover{
+    box-shadow:  0 4px 8px rgba(164, 9, 133, 0.353);
+}

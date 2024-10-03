@@ -1,0 +1,12 @@
+#cart-item{
+    flex-direction: row;
+}
+
+#cart-title-card{
+    font-size: 15px;
+}
+
+#btn-delete-style{
+    --bs-btn-border-color: rgb(164, 9, 133);
+    --bs-btn-hover-border-color: rgb(164, 9, 133);
+}
