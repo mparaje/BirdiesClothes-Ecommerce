@@ -10,10 +10,6 @@ export const ItemDetail = ({ detail }) => {
     const [count, setCount] = useState(1);
     const { addToCart } = useCartContext();
 
-    if (!detail) {
-        return <div>Loading...</div>;
-    }
-
     const onCountChange = (newCount) => {
         setCount(newCount);
     };

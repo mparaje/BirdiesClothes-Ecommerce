@@ -3,17 +3,13 @@ import { Link } from "react-router-dom"
 import styles from "./navbar.module.css"
 import { useEffect, useState } from "react"
 import { CartContainer } from "../CartContainer/CartContainer"
+import { getCategories } from "../../firebase/database"
 
 export const Navbar = ({isCartOpen, setIsCartOpen}) =>{
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-    fetch('https://fakestoreapi.com/products/categories')
-      .then(res => res.json())
-      .then(res => setCategories(res)) // Guardar las categorías obtenidas
-      .catch(error => {
-        console.error("Error fetching categories:", error);
-      });
+        getCategories(setCategories);
     }, []);
     return(
         <nav className={styles.containerNav}>

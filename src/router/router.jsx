@@ -16,7 +16,7 @@ export const AppRouter = () => {
             <Routes>
                 <Route path="/" element={<ItemListContainer/>} />
                 <Route path="/product/:id" element={<ItemDetailContainer/>} />
-                <Route path="/category/:id" element={<ItemListContainer/>} />
+                <Route path="/category/:category" element={<ItemListContainer/>} />
                 <Route path="/" element={<CartContainer/>} />
                 <Route path="/checkout" element={<CheckoutContainer setIsCartOpen={setIsCartOpen}/>}/>
             </Routes>
