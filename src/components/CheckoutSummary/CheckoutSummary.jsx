@@ -1,6 +1,6 @@
 import { useCartContext } from "../../context/cartContext";
 import { Card, ListGroup, Badge } from 'react-bootstrap';
-import styles from './CheckoutSummary.module.css';
+import styles from './checkoutSummary.module.css';
 
 export const CheckoutSummary = () => {
     const { cart, getPriceTotal } = useCartContext();
