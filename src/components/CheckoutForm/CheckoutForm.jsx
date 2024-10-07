@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Form } from 'react-bootstrap';
-import styles from './CheckoutForm.module.css';
+import styles from './checkoutForm.module.css';
 import { useCartContext } from '../../context/cartContext';
 import { serverTimestamp } from 'firebase/firestore';
 import { createOrder } from "../../firebase/database";
