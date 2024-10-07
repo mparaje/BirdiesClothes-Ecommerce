@@ -4,6 +4,7 @@ import styles from "./navbar.module.css"
 import { useEffect, useState } from "react"
 import { CartContainer } from "../CartContainer/CartContainer"
 import { getCategories } from "../../firebase/database"
+import logo from "../../assets/logo-ecommerce.png"
 
 export const Navbar = ({isCartOpen, setIsCartOpen}) =>{
     const [categories, setCategories] = useState([]);
@@ -15,7 +16,7 @@ export const Navbar = ({isCartOpen, setIsCartOpen}) =>{
         <nav className={styles.containerNav}>
             <div className={styles.containerLogo}>
             <Link to='/'>
-                <img src="./src/assets/logo-ecommerce.png" alt="logo" className={styles.logo}/>
+                <img src={logo} alt="logo" className={styles.logo}/>
             </Link>
             </div>
             <ul className={styles.containerCategorias}>
